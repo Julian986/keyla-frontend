@@ -1,0 +1,23 @@
+
+.profileContainer {
+    margin-top: 100px;
+}
+
+.addProduct {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-content {
+    margin-top: 100px;
+}
+
+.userBtn {
+    background: black;
+    border: 1px solid grey;
+    border-radius: 13px;
+}
+
+.userBtn:hover {
+    background: #0e0e0e;
+}

@@ -1,0 +1,70 @@
+
+.home-section {
+    /* background: linear-gradient(135deg, #2d162b, #243b55); */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+    position: relative;
+    bottom: 12px;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .home-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+
+.home{
+    margin-top: 34px;
+}
+
+.home-content {
+   margin: 10px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.crypto-link {
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.btnExploreContainer {
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+}
+
+.btnExplore {
+  background-color: #10179c  !important;
+  border-color: black !important;
+  color: white;
+  padding: 4px 30px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5000;
+  border-radius: 7px;
+  background-color: #000dff !important;
+  box-shadow: 2px 2px 2px blue;
+}
+
+.myButton {
+  background-color: red;
+  cursor: pointer;
+}
+
+
+button.btnExplore:hover {
+  /* background-color: #0e159e   !important;
+  border-color: black !important;
+  color: white; */
+}

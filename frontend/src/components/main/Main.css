@@ -1,0 +1,6 @@
+.mainContainer {
+    margin-top: 90px; /* Un poco más que la altura del header */
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }

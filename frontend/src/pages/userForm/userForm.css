@@ -1,0 +1,27 @@
+
+
+.productContainer {
+    background-color: black;
+    margin-top: 50px;
+}
+
+.productFormTitle {
+    color: white;
+}
+
+.productForm {
+    background: #000000;
+    border: 2px solid grey;
+}
+
+.productInput {
+    color: white;
+}
+
+.productoInput::placeholder {
+    color: #a09b9b;
+}
+
+.userForm {
+    color: white;
+}

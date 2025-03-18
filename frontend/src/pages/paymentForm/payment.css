@@ -1,0 +1,118 @@
+.formContainerPayment {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+
+.formWrapperPayment {
+    background: #000000;
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 500px;
+    border: 1px solid #afb5bd;
+}
+
+.paymentTitle {
+    color: #e2e8f0;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.paymentMethods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.methodCard {
+    background: #000000;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #545454ab;
+    text-align: center;
+}
+
+.methodCard:hover {
+    background: #475569;
+    transform: translateY(-2px);
+}
+
+.methodCard.selected {
+    border-color: #818cf8;
+    background: #475569;
+    box-shadow: 0 4px 6px rgba(129, 140, 248, 0.1);
+}
+
+.methodIcon {
+    color: #818cf8;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.methodIcon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.methodTitle {
+    color: #e2e8f0;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.submitButtonPayment {
+    width: 100%;
+    padding: 1rem;
+    background: #818cf8;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.submitButtonPayment:hover:not(:disabled) {
+    background: #6366f1;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(99, 102, 241, 0.2);
+}
+
+.submitButtonPayment:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.securityNote {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.securityNote svg {
+    color: #4ade80;
+    width: 20px;
+    height: 20px;
+}
+
+.errorMessage {
+    color: #f87171;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}

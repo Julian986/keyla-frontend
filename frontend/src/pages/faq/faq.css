@@ -1,0 +1,28 @@
+
+
+.faqContainer {
+
+}
+
+.faqTitle {
+    margin-top: 130px;
+    margin-bottom: 28px;
+    color: white;
+    text-align: center;
+}
+
+.faqQuestion {
+    color: white;
+}
+
+.faqRow:hover {
+    background-color: #131313 !important;
+}
+
+.faqAnswer {
+    color: #b4aeae;
+}
+
+.faqArrow {
+    color: rgb(120, 23, 212);
+}

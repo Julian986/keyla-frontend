@@ -1,0 +1,21 @@
+
+.sideContainer {
+    background-color: black;
+    border: 1px solid #292929;
+    width: 20%;
+    
+}
+
+.sideTitle{
+    color: white;
+}
+
+label {
+    color: #9a9a9a;
+}
+
+.titleSidebar {
+    color: #ffffff;
+    font-size: 1.3rem;
+    box-shadow: 2px 3px 4px #393737
+}

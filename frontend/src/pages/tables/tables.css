@@ -1,0 +1,63 @@
+
+
+.myTable {
+   width: 90%;
+    margin: auto;
+    margin-top: 120px;
+    border-radius: 23px;
+    padding: 18px;
+    /* background: #0b0b0b; */
+    background: none;
+    position: relative;
+    z-index: 4000;
+}
+
+.modalCard {
+  z-index: 4200;
+}
+
+.myTableRow {
+  border-color: #040913;
+  cursor: pointer;
+}
+
+.myTableRow:hover {
+  background-color: #101828;
+  width: 100%;
+}
+
+.headerRow{
+  background-color: #021317;
+}
+
+
+.myLine {
+  position: absolute;
+  top: 26%;
+  left: 39%;
+}
+
+.myShadowLine {
+  position: absolute;
+  top: 25%;
+ /*  left: 40%; */
+  width: 100%;
+}
+
+.tableButtonContainer {
+  width: 100%;
+  display: flex  ;
+  justify-content: end;
+  align-items: start;
+}
+
+.buttonTable {
+  z-index: 7600;
+  color: white;
+  padding: 4px 30px !important;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: #000cb7 !important;
+  box-shadow: 5px 5px 9px #000cb7 !important;
+  margin-bottom: 10px;
+}

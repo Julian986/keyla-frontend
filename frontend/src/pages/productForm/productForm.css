@@ -1,0 +1,121 @@
+/* Contenedor principal del formulario */
+.productContainer {
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  /* Título del formulario */
+  .productFormTitle {
+    color: white;
+    text-align: center;
+  }
+
+  .productFormDesc {
+    text-align: center;
+    color: rgb(166, 161, 161);
+  }
+  
+  /* Formulario */
+  .productForm {
+    background: #000000;
+    border: 2px solid grey;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Inputs del formulario */
+  .productoInput {
+    color: white;
+    background-color: #131313;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .productoInput::placeholder {
+    color: #a09b9b;
+  }
+  
+  /* Contenedor de la imagen */
+  .imgProdFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Tamaño fijo para el contenedor */
+    height: 200px; /* Tamaño fijo para el contenedor */
+    aspect-ratio: 1 / 1; /* Relación de aspecto 1:1 (cuadrada) */
+    overflow: hidden; /* Oculta el exceso de la imagen */
+    border: 2px dashed #555; /* Borde punteado para indicar área de subida */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #222; /* Fondo oscuro */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el contenedor */
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+  }
+  
+  .imgProdFormContainer:hover {
+    border-color: #888; /* Cambia el color del borde al pasar el mouse */
+  }
+  
+  /* Imagen dentro del contenedor */
+  .imgProdFormContainer img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+  }
+  
+  /* Texto de "Click to upload image" */
+  .imgProdFormContainer span {
+    color: #a09b9b;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Contenedor de la imagen de "remove background" */
+  .imageRemoveContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Imagen de "remove background" */
+  .imgRemove {
+    width: 356px; /* Tamaño reducido para mejor ajuste */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  /* Texto debajo de la imagen de "remove background" */
+  .imageRemoveContainer p {
+    color: #a09b9b;
+    font-size: 12px;
+    text-align: center;
+    max-width: 200px;
+  }
+
+
+/* Estilos para el modal del rotador */
+.rotator-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.rotator-modal .rotator-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ /*  max-width: 90%;
+  max-height: 90%; */
+  width: 390px;
+  overflow: auto;
+}

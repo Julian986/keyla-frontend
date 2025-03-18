@@ -1,0 +1,74 @@
+
+
+.carritoFalso {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 11000;
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0 0 0 10px;
+  cursor: pointer;
+
+}
+
+.carritoContainer {
+  z-index: 12000;
+}
+
+.backgroundLines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.introContainer {
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; 
+}
+
+.imgSlider img {
+  width: 200px;
+}
+
+
+/* MEDIA QUERIES */
+
+  /* Para tablets (menos de 1024px) */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 900px;
+    }
+  }
+  
+  /* Para celulares (menos de 768px) */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 600px;
+    }
+  }
+  
+  /* Para celulares muy pequeños */
+  @media (max-width: 480px) {
+    .container {
+      max-width: 90%; /* Se adapta completamente */
+    }
+  }
+  

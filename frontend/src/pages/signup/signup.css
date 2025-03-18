@@ -1,0 +1,46 @@
+
+.formContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+    width: 100%;
+}
+
+.formInput {
+    background-color: black; 
+}
+
+.formWrapper2 {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 472px;
+        height: 546px;
+        background: black;
+        border-radius: 18px;
+        border: 2px solid #1f1e1e;
+}
+
+.loginTitle {
+    color: white;
+    margin-top: 35px;
+}
+
+.submitButton {
+    border-radius: 26px;
+    box-shadow: 3px 3px 4px #155dfc;
+}
+
+.notRegister {
+    margin-top: 22px;
+}
+
+.notRegister a {
+    text-decoration: none;
+}
