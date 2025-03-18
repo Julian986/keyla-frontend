@@ -30,7 +30,7 @@ const Intro = ({ mainRef }: IntroProps) => {
           <Row className="justify-content-center text-center">
             <Col md={8}>
               <h1 className="home-title">Welcome to Keyla</h1>
-              <p className="home-subtitle">Software gaming</p>
+              <p className="home-subtitle">Marketplace gaming</p>
               <p className="home-subtitle">
                 Discover and share amazing content with our community
               </p>
