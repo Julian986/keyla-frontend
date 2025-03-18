@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Cropper from "react-easy-crop";
 import { Point, Area } from "react-easy-crop/types";
 import { MdCropRotate } from "react-icons/md";
-import "./ImageRotator.css"; // Estilos para el componente
+import "./imageRotator.css"
 
 interface ImageRotatorProps {
   image: string; // URL de la imagen
