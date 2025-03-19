@@ -44,7 +44,7 @@ const CardProduct = ( props : CardProps) => {
       if (!auth?.token)  return;
        
       try {
-        const response = await axios.get("http://localhost:4500/user/favourites", {
+        const response = await axios.get("https://keyla-backend.onrender.com/user/favourites", {
           headers: { Authorization: `Bearer ${auth.token}` },
         });
         
@@ -82,14 +82,14 @@ const CardProduct = ( props : CardProps) => {
       if (isFavorite) {
         // Hacer una solicitud DELETE para eliminarlo de favoritos
         await axios.delete(
-          "http://localhost:4500/user/remove-favourite",
+          "https://keyla-backend.onrender.com/user/remove-favourite",
           { data: { productId: props._id }, headers: { Authorization: `Bearer ${auth.token}` } }
         );
         setIsFavorite(false); // Actualizar el estado para reflejar que ya no es favorito
       } else {
         // Verificar si el producto ya está en favoritos antes de agregarlo
         await axios.post(
-          "http://localhost:4500/user/add-favourite",
+          "https://keyla-backend.onrender.com/user/add-favourite",
           { productId: props._id },
           {
             headers: {
@@ -130,7 +130,7 @@ const CardProduct = ( props : CardProps) => {
         </span>
 
         <div className="imagenContainer">
-          <img src={`http://localhost:4500/${imageUrl}`}  alt={props.name} className="w-full h-auto" />
+          <img src={`https://keyla-backend.onrender.com/${imageUrl}`}  alt={props.name} className="w-full h-auto" />
         </div>
         <div className="cardDataContainer text-center">
           <h5 className="text-lg font-bold homeCardTitle">{props.name}</h5>

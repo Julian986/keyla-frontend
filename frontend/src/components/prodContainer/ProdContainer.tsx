@@ -32,7 +32,7 @@ const ProdContainer = ({ searchTerm }: ProdContainerProps) => {
   useEffect(() => {
     const fetchUserProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:4500/products");
+        const response = await axios.get("https://keyla-backend.onrender.com/products");
         console.log("Productos recibidos de la API:", response.data);
 
         const allProducts = [...defaultProducts, ...response.data];

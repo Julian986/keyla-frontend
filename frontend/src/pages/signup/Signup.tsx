@@ -20,7 +20,7 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:4500/auth/signup", { name, password });
+      const res = await axios.post("https://keyla-backend.onrender.com/auth/signup", { name, password });
       console.log("Usuario registrado:", res.data);
       navigate("/login"); // Redirige al login tras el registro
     } catch (err: any) {

@@ -74,7 +74,7 @@ export default function ProductForm() {
     }
 
     try {
-      const response = await axios.post("http://localhost:4500/products/publish", formData, {
+      const response = await axios.post("https://keyla-backend.onrender.com/products/publish", formData, {
         headers: { 
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

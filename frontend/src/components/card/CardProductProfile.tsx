@@ -29,7 +29,7 @@ const CardProductProfile = (props: CardProps) => {
           <FaTrash className="deleteIcon" />
         </span>
         <div className="imagenContainer">
-          <img src={`http://localhost:4500/${imageUrl}`} alt={props.name} className="w-full h-auto" />
+          <img src={`https://keyla-backend.onrender.com/${imageUrl}`} alt={props.name} className="w-full h-auto" />
         </div>
         <div className="cardDataContainer text-center">
           <h5 className="text-lg font-bold homeCardTitle">{props.name}</h5>

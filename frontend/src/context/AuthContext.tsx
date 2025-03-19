@@ -53,7 +53,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       }
 
       axios.defaults.headers.common["x-auth-token"] = token;
-      axios.get("http://localhost:4500/user/me")
+      axios.get("https://keyla-backend.onrender.com/user/me")
         .then((res) => {
           setUser(res.data);
           console.log("Datos de usuario obtenidos:", res.data);
@@ -67,7 +67,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   const login = async (name: string, password: string): Promise<boolean> => {
     try {
-      const res = await axios.post("http://localhost:4500/auth/login", { name, password });
+      const res = await axios.post("https://keyla-backend.onrender.com/auth/login", { name, password });
       const newToken = res.data.token;
       setToken(newToken);
       localStorage.setItem("token", newToken);

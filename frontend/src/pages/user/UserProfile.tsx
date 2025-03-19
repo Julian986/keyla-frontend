@@ -32,7 +32,7 @@ const ProfileComponent = () => {
 
     const fetchProducts = async () => {
       try {
-        const response = await axios.get<Product[]>("http://localhost:4500/user/products", {
+        const response = await axios.get<Product[]>("https://keyla-backend.onrender.com/user/products", {
           headers: { "x-auth-token": auth?.token }
         });
         console.log("Response.data: "+response.data); 
@@ -45,7 +45,7 @@ const ProfileComponent = () => {
     const fetchFavouriteProducts = async () => {
       try {
         console.log("Token enviado en la petición:", auth?.token);
-        const response = await axios.get<Product[]>("http://localhost:4500/user/favourites", {
+        const response = await axios.get<Product[]>("https://keyla-backend.onrender.com/user/favourites", {
           headers: { "x-auth-token": auth?.token }
         });
         console.log("Productos a la venta: "+response.data);
@@ -68,7 +68,7 @@ const ProfileComponent = () => {
 
     try {
       await axios.delete(
-        'http://localhost:4500/user/remove-favourite',
+        'https://keyla-backend.onrender.com/user/remove-favourite',
         {
           data: { productId },
           headers: {
@@ -90,7 +90,7 @@ const ProfileComponent = () => {
 
     try {
       await axios.delete(
-        'http://localhost:4500/user/remove-product-for-sale',
+        'https://keyla-backend.onrender.com/user/remove-product-for-sale',
         {
           data: {productId},
           headers: {
